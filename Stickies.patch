@@ -1,0 +1,14 @@
+--- Stickies.js.orig	2012-09-06 18:39:48.000000000 +0900
++++ Stickies.js	2013-05-23 15:43:47.000000000 +0900
+@@ -55,7 +55,10 @@
+ 	if (getDevicePixelRatio() > 1)
+ 	{
+ 		$("check").src = "Images/check@2x.png";
+-		$("frontImg").src = "Images/yellow@2x.png";
++        // fix bgcolor bug on retina display.
++		if ($("frontImg").src.indexOf("@2x.png") < 0) {
++			$("frontImg").src = $("frontImg").src.replace(".png", "@2x.png");
++		}
+ 		$("dont").src = "Images/notallowed@2x.png";
+ 		$("backImg").src = "Images/backside@2x.png";
+ 	}
