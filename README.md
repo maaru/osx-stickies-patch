@@ -1,5 +1,7 @@
 patch
 =====
+_OS X Yosemite fixed this issue! This path is no longer needed._
+
 * Stickies.patch
     * Fix issue that background color is reverted to default yellow at restart. This problem occurs only in the retina display.
     * 1. Copy Stickies.patch to local. (example, ~/Downloads/Stickies.patch)
