@@ -1,4 +1,4 @@
-**[OBSOLETED] _OS X Yosemite fixed this issue! This path is no longer needed._**
+**[OBSOLETE] _OS X Yosemite fixed this issue! This path is no longer needed._**
 
 osx-stickies-patch
 =====
